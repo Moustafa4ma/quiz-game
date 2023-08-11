@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#6494ed,#3475ef);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;
+    padding: 30px;
+}
+.q{
+    width: 300px;
+    max-height: fit-content;
+    min-height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+
+}
+.title{
+    margin: 20px auto;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+.ans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.ans .answer{
+    padding:20px 30px;
+    width: 90%;
+    text-align: center;
+    margin: 20px;
+    background-color: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.ans .answer:hover{
+    background-color: #bbbbbb;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.btns button{
+    border-radius: 15px;
+    color: royalblue;
+    padding: 10px 20px;
+    width: 100px;
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.end{
+    margin: auto;
+    font-size: 2rem;
+    color: #222;
+    text-align: center;
+    padding: 20px;
+}
+.last{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -20px;
+    position: relative;
+}
+.again{
+    width: 100px;
+    display: block;
+    margin: 20px;
+    position: absolute;
+    bottom: 30%;
+    border-radius: 15px;
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: #eee;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.num{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+
+@media (min-width:600px){
+    .q{
+        width: 600px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+}
+@media (min-width:1200px){
+    .q{
+        width: 800px;
+    }
+    
+}
