@@ -76,13 +76,19 @@ for(j=0;j<questions[i].answers.length;j++){
      if(this.innerHTML==questions[i].rightAns){
         this.style.background="#43d114"
         this.style.color="white"
-        setTimeout(function(){nextbtn.click()},500)
+        setTimeout(function(){nextbtn.click()},800)
         score+=1;
      }
      else{
         this.style.background="#ff2323"
         this.style.color="white"
-        setTimeout(function(){nextbtn.click()},500)
+        setTimeout(function(){nextbtn.click()},800)
+        answerSec.forEach(function(el){
+            if(el.innerHTML==questions[i].rightAns){
+                el.style.background="#43d114"
+                el.style.color="white"
+            }
+        })
      }
     
     }
